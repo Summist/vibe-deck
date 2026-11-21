@@ -1,0 +1,11 @@
+# Локальный инструментарий
+.opencode/
+.impeccable/
+
+# Системный и редакторский шум
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Бэкапы
+*.zip

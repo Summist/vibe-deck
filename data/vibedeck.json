@@ -1,0 +1,629 @@
+{
+  "version": 2,
+  "slots": [
+    {
+      "id": "niche",
+      "label": "Niche",
+      "type": "list",
+      "items": [
+        {
+          "title": "Газированные напитки",
+          "meta": "Еда и напитки"
+        },
+        {
+          "title": "Кофейня",
+          "meta": "Еда и напитки"
+        },
+        {
+          "title": "Крафтовая пивоварня",
+          "meta": "Еда и напитки"
+        },
+        {
+          "title": "Ремесленная пекарня",
+          "meta": "Еда и напитки"
+        },
+        {
+          "title": "Уличная марка",
+          "meta": "Мода"
+        },
+        {
+          "title": "Магазин трикотажа",
+          "meta": "Мода"
+        },
+        {
+          "title": "Ювелирный бренд",
+          "meta": "Мода"
+        },
+        {
+          "title": "Магазин обуви",
+          "meta": "Мода"
+        },
+        {
+          "title": "Бренд косметики",
+          "meta": "Красота"
+        },
+        {
+          "title": "Уход за кожей",
+          "meta": "Красота"
+        },
+        {
+          "title": "Парфюмерный дом",
+          "meta": "Красота"
+        },
+        {
+          "title": "Барбершоп",
+          "meta": "Красота"
+        },
+        {
+          "title": "AI-сервис",
+          "meta": "Технологии"
+        },
+        {
+          "title": "Приложение для задач",
+          "meta": "Технологии"
+        },
+        {
+          "title": "Кибербезопасность",
+          "meta": "Технологии"
+        },
+        {
+          "title": "Умный дом",
+          "meta": "Технологии"
+        },
+        {
+          "title": "Медиа о культуре",
+          "meta": "Лайфстайл"
+        },
+        {
+          "title": "Клуб бега",
+          "meta": "Лайфстайл"
+        },
+        {
+          "title": "Магазин растений",
+          "meta": "Лайфстайл"
+        },
+        {
+          "title": "Подкаст-студия",
+          "meta": "Лайфстайл"
+        },
+        {
+          "title": "Бутик-отель",
+          "meta": "Гостеприимство"
+        },
+        {
+          "title": "Винный бар",
+          "meta": "Гостеприимство"
+        },
+        {
+          "title": "Гостевой дом",
+          "meta": "Гостеприимство"
+        },
+        {
+          "title": "Глэмпинг",
+          "meta": "Гостеприимство"
+        },
+        {
+          "title": "Спортивное питание",
+          "meta": "Спорт"
+        },
+        {
+          "title": "Студия йоги",
+          "meta": "Спорт"
+        },
+        {
+          "title": "Скалодром",
+          "meta": "Спорт"
+        },
+        {
+          "title": "Бренд велосипедов",
+          "meta": "Спорт"
+        },
+        {
+          "title": "Бренд помады",
+          "meta": "Косметика"
+        },
+        {
+          "title": "Средства для волос",
+          "meta": "Косметика"
+        },
+        {
+          "title": "Маникюрная студия",
+          "meta": "Косметика"
+        },
+        {
+          "title": "Солнцезащита",
+          "meta": "Косметика"
+        },
+        {
+          "title": "Магазин мебели",
+          "meta": "Дом и интерьер"
+        },
+        {
+          "title": "Керамическая мастерская",
+          "meta": "Дом и интерьер"
+        },
+        {
+          "title": "Постельное бельё",
+          "meta": "Дом и интерьер"
+        },
+        {
+          "title": "Дизайн освещения",
+          "meta": "Дом и интерьер"
+        },
+        {
+          "title": "Галерея",
+          "meta": "Искусство и культура"
+        },
+        {
+          "title": "Книжный магазин",
+          "meta": "Искусство и культура"
+        },
+        {
+          "title": "Фестиваль",
+          "meta": "Искусство и культура"
+        },
+        {
+          "title": "Музей современного искусства",
+          "meta": "Искусство и культура"
+        }
+      ]
+    },
+    {
+      "id": "mood",
+      "label": "Mood",
+      "type": "list",
+      "items": [
+        {
+          "title": "Спокойствие"
+        },
+        {
+          "title": "Ностальгия"
+        },
+        {
+          "title": "Дерзость"
+        },
+        {
+          "title": "Уют"
+        },
+        {
+          "title": "Мечтательность"
+        },
+        {
+          "title": "Энергия"
+        },
+        {
+          "title": "Меланхолия"
+        },
+        {
+          "title": "Тепло"
+        },
+        {
+          "title": "Лёгкость"
+        },
+        {
+          "title": "Собранность"
+        },
+        {
+          "title": "Игра"
+        },
+        {
+          "title": "Таинственность"
+        }
+      ]
+    },
+    {
+      "id": "name",
+      "label": "Name",
+      "type": "list",
+      "items": [
+        {
+          "title": "VESNA"
+        },
+        {
+          "title": "MOKKO"
+        },
+        {
+          "title": "LUMEN"
+        },
+        {
+          "title": "SOLA"
+        },
+        {
+          "title": "KEDR"
+        },
+        {
+          "title": "TILT"
+        },
+        {
+          "title": "MIRA"
+        },
+        {
+          "title": "KVIT"
+        },
+        {
+          "title": "RIFT"
+        },
+        {
+          "title": "NORA"
+        },
+        {
+          "title": "GRAV"
+        },
+        {
+          "title": "SOMA"
+        },
+        {
+          "title": "ARKA"
+        },
+        {
+          "title": "ВОЛНА"
+        },
+        {
+          "title": "ЗАРЯ"
+        },
+        {
+          "title": "ОКНО"
+        },
+        {
+          "title": "ПОЛЕ"
+        },
+        {
+          "title": "ИСКРА"
+        },
+        {
+          "title": "ЛУНА"
+        },
+        {
+          "title": "ПЕНА"
+        },
+        {
+          "title": "СОВА"
+        },
+        {
+          "title": "ДОМ 7"
+        },
+        {
+          "title": "КАДР 2"
+        },
+        {
+          "title": "ТОН 9"
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "label": "Colors",
+      "type": "palette",
+      "items": [
+        {
+          "title": "Terracotta & Cobalt",
+          "colors": [
+            {
+              "hex": "#C1502E",
+              "name": "Terracotta"
+            },
+            {
+              "hex": "#1E4B9B",
+              "name": "Cobalt"
+            },
+            {
+              "hex": "#E3C6A0",
+              "name": "Sand"
+            },
+            {
+              "hex": "#F1EBE1",
+              "name": "Bone"
+            }
+          ]
+        },
+        {
+          "title": "Sage & Charcoal",
+          "colors": [
+            {
+              "hex": "#9CAF88",
+              "name": "Sage"
+            },
+            {
+              "hex": "#2F3330",
+              "name": "Charcoal"
+            },
+            {
+              "hex": "#E8E4DB",
+              "name": "Chalk"
+            },
+            {
+              "hex": "#B9773E",
+              "name": "Clay"
+            }
+          ]
+        },
+        {
+          "title": "Butter & Ink",
+          "colors": [
+            {
+              "hex": "#F2D06B",
+              "name": "Butter"
+            },
+            {
+              "hex": "#17181A",
+              "name": "Ink"
+            },
+            {
+              "hex": "#FBF7EE",
+              "name": "Cream"
+            },
+            {
+              "hex": "#7A6A58",
+              "name": "Bark"
+            }
+          ]
+        },
+        {
+          "title": "Rose & Burgundy",
+          "colors": [
+            {
+              "hex": "#EFB7C0",
+              "name": "Rose"
+            },
+            {
+              "hex": "#6B1F33",
+              "name": "Burgundy"
+            },
+            {
+              "hex": "#F7EDE8",
+              "name": "Linen"
+            }
+          ]
+        },
+        {
+          "title": "Nordic Fog",
+          "colors": [
+            {
+              "hex": "#C9D6DB",
+              "name": "Fog"
+            },
+            {
+              "hex": "#5B7683",
+              "name": "Slate Blue"
+            },
+            {
+              "hex": "#F4F6F6",
+              "name": "Snow"
+            },
+            {
+              "hex": "#2C3438",
+              "name": "Basalt"
+            }
+          ]
+        },
+        {
+          "title": "Acid Citrus",
+          "colors": [
+            {
+              "hex": "#D8E64B",
+              "name": "Citron"
+            },
+            {
+              "hex": "#1F8A5B",
+              "name": "Leaf"
+            },
+            {
+              "hex": "#F5F2E8",
+              "name": "Paper"
+            },
+            {
+              "hex": "#161616",
+              "name": "Pitch"
+            }
+          ]
+        },
+        {
+          "title": "Desert Bloom",
+          "colors": [
+            {
+              "hex": "#D98E73",
+              "name": "Adobe"
+            },
+            {
+              "hex": "#F0D9C4",
+              "name": "Dune"
+            },
+            {
+              "hex": "#6E7F5C",
+              "name": "Cactus"
+            },
+            {
+              "hex": "#FBF6EF",
+              "name": "Salt"
+            }
+          ]
+        },
+        {
+          "title": "Midnight Berry",
+          "colors": [
+            {
+              "hex": "#221D35",
+              "name": "Midnight"
+            },
+            {
+              "hex": "#6B2C5B",
+              "name": "Plum"
+            },
+            {
+              "hex": "#C9A0B4",
+              "name": "Mauve"
+            },
+            {
+              "hex": "#F3EAF1",
+              "name": "Petal"
+            }
+          ]
+        },
+        {
+          "title": "Pistachio Cream",
+          "colors": [
+            {
+              "hex": "#C9D8A4",
+              "name": "Pistachio"
+            },
+            {
+              "hex": "#F4F0DF",
+              "name": "Cream"
+            },
+            {
+              "hex": "#4E5A46",
+              "name": "Moss"
+            }
+          ]
+        },
+        {
+          "title": "Neon Noir",
+          "colors": [
+            {
+              "hex": "#0E0E12",
+              "name": "Noir"
+            },
+            {
+              "hex": "#00E0A4",
+              "name": "Mint Neon"
+            },
+            {
+              "hex": "#FF3D81",
+              "name": "Hot Pink"
+            },
+            {
+              "hex": "#F5F5F5",
+              "name": "White"
+            }
+          ]
+        },
+        {
+          "title": "Clay & Olive",
+          "colors": [
+            {
+              "hex": "#B4643E",
+              "name": "Clay"
+            },
+            {
+              "hex": "#6B7248",
+              "name": "Olive"
+            },
+            {
+              "hex": "#E6DCC8",
+              "name": "Straw"
+            },
+            {
+              "hex": "#2A2A26",
+              "name": "Umber"
+            }
+          ]
+        },
+        {
+          "title": "Paper & Ochre",
+          "colors": [
+            {
+              "hex": "#F6F1E4",
+              "name": "Paper"
+            },
+            {
+              "hex": "#C98A2E",
+              "name": "Ochre"
+            },
+            {
+              "hex": "#3E3A33",
+              "name": "Graphite"
+            },
+            {
+              "hex": "#8C9A8B",
+              "name": "Sage Grey"
+            }
+          ]
+        },
+        {
+          "title": "Poolside",
+          "colors": [
+            {
+              "hex": "#2BA8C4",
+              "name": "Pool"
+            },
+            {
+              "hex": "#F7E3A3",
+              "name": "Sun"
+            },
+            {
+              "hex": "#F4F7F5",
+              "name": "Foam"
+            },
+            {
+              "hex": "#135B6B",
+              "name": "Deep Teal"
+            }
+          ]
+        },
+        {
+          "title": "Espresso Cream",
+          "colors": [
+            {
+              "hex": "#3B2A22",
+              "name": "Espresso"
+            },
+            {
+              "hex": "#C8A27C",
+              "name": "Latte"
+            },
+            {
+              "hex": "#EFE3D2",
+              "name": "Cream"
+            },
+            {
+              "hex": "#7A4A2E",
+              "name": "Cocoa"
+            }
+          ]
+        },
+        {
+          "title": "Y2K Chrome",
+          "colors": [
+            {
+              "hex": "#C9CDD4",
+              "name": "Chrome"
+            },
+            {
+              "hex": "#B9A8FF",
+              "name": "Lilac"
+            },
+            {
+              "hex": "#A9E4F5",
+              "name": "Ice"
+            },
+            {
+              "hex": "#F2F2F4",
+              "name": "White"
+            }
+          ]
+        },
+        {
+          "title": "Sunbleached",
+          "colors": [
+            {
+              "hex": "#E8B15A",
+              "name": "Sun"
+            },
+            {
+              "hex": "#EEDFC6",
+              "name": "Sand"
+            },
+            {
+              "hex": "#8FA9A0",
+              "name": "Sea Glass"
+            },
+            {
+              "hex": "#FFFDF8",
+              "name": "Chalk"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

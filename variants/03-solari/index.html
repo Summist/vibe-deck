@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VIBEDECK — табло</title>
+    <meta
+      name="description"
+      content="VIBEDECK: случайная комбинация ниши, настроения, имени бренда и палитры — отправная точка для нового концепта."
+    />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="../fonts/roboto-condensed.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="board" id="board">
+      <span class="rivet rivet--tl" aria-hidden="true"></span>
+      <span class="rivet rivet--tr" aria-hidden="true"></span>
+      <span class="rivet rivet--bl" aria-hidden="true"></span>
+      <span class="rivet rivet--br" aria-hidden="true"></span>
+
+      <header class="top">
+        <p class="top__brand">VIBEDECK</p>
+
+        <div class="top__text">
+          <h1 class="top__title">Табло комбинаций</h1>
+          <p class="top__lead">
+            Ниша, настроение, имя и палитра — четыре строки табло. Крутить меняет все сразу.
+          </p>
+        </div>
+
+        <p class="top__count">
+          <span id="count">184 320</span>
+          <span class="top__count-label">комбинаций</span>
+        </p>
+      </header>
+
+      <section class="rows" id="slots" aria-label="Комбинация" aria-busy="true"></section>
+
+      <div class="error" id="error" hidden>
+        <h2>Нет сигнала</h2>
+        <p>
+          Данные читаются из <span class="mono">data/vibedeck.json</span> запросом — нужен
+          локальный сервер. Из корня проекта:
+        </p>
+        <pre><code>python -m http.server 5173</code></pre>
+        <p>Затем откройте <span class="mono">http://localhost:5173/variants/03-solari/</span>.</p>
+        <button class="spin spin--small" id="retry" type="button">Повторить</button>
+      </div>
+
+      <footer class="foot" id="foot" hidden>
+        <p class="foot__hint">Нажмите на цвет — HEX уйдёт в буфер</p>
+
+        <button class="spin" id="spin" type="button">
+          <span class="spin__lamp" aria-hidden="true"></span>
+          <span class="spin__text" id="spin-label">Крутить</span>
+        </button>
+
+        <p class="foot__status" id="status">Табло готово</p>
+      </footer>
+
+      <p class="visually-hidden" id="live" role="status" aria-live="polite"></p>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../core.js"></script>
+    <script src="page.js"></script>
+  </body>
+</html>

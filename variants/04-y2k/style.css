@@ -1,0 +1,562 @@
+/* 04 — ЛИЧНАЯ СТРАНИЦА 2000: звёздное небо, хром, выпуклые панели,
+   бегущая строка и жёлтые подписи. */
+
+:root {
+  --night: #05002e;
+  --night-2: #0d0245;
+  --panel: #000058;
+  --panel-2: #10107a;
+  --silver: #d7d7e8;
+  --silver-2: #aeaecb;
+  --silver-hi: #f6f6ff;
+  --silver-lo: #6f6f95;
+  --yellow: #ffe600;
+  --ink: #0b0b22;
+  --white: #ffffff;
+  --violet: #b9b9e8;
+  --blue-link: #8fb6ff;
+  --verdana: Verdana, Geneva, Tahoma, sans-serif;
+  --mono: "Cascadia Mono", Consolas, monospace;
+  --chrome: "Michroma", "Arial Black", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  color: var(--white);
+  font-family: var(--verdana);
+  font-size: 12px;
+  line-height: 1.55;
+  background-color: var(--night);
+  background-image:
+    radial-gradient(1.4px 1.4px at 24px 36px, #ffffff 0 45%, transparent 55%),
+    radial-gradient(1px 1px at 92px 132px, #a8c8ff 0 45%, transparent 55%),
+    radial-gradient(1px 1px at 148px 62px, #ffd7f5 0 45%, transparent 55%),
+    radial-gradient(1.8px 1.8px at 62px 182px, #ffffff 0 40%, transparent 55%),
+    radial-gradient(1px 1px at 182px 12px, #ffffff 0 40%, transparent 55%),
+    linear-gradient(180deg, #150043 0%, #090033 45%, #03001c 100%);
+  background-size: 220px 220px, 260px 260px, 300px 300px, 380px 380px, 200px 200px, 100% 100%;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(80% 50% at 50% 0%, rgb(120 80 255 / 18%), transparent 70%);
+}
+
+::selection {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+* {
+  scrollbar-color: var(--silver) #12123a;
+  scrollbar-width: auto;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.mono {
+  font-family: var(--mono);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Бегущая строка */
+
+.marquee {
+  overflow: hidden;
+  padding: 2px 0 3px;
+  border-bottom: 2px solid var(--silver-lo);
+  background: linear-gradient(180deg, var(--silver-hi), var(--silver) 55%, var(--silver-2));
+  color: #190052;
+}
+
+.marquee__track {
+  display: inline-flex;
+  gap: 0;
+  white-space: nowrap;
+  animation: crawl 26s linear infinite;
+}
+
+.marquee__track span {
+  padding: 3px 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+}
+
+@keyframes crawl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Страница */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: min(100% - 24px, 900px);
+  min-height: calc(100svh - 32px);
+  margin: 0 auto;
+  padding: 14px 0 20px;
+}
+
+.page__stamp {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--yellow);
+  text-shadow: 0 1px 0 #000;
+}
+
+.mast {
+  padding: 6px 0 16px;
+  text-align: center;
+}
+
+.mast__title {
+  font-family: var(--chrome);
+  font-size: clamp(24px, 4.4vw, 42px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #dfe8f8;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #c9d6e8 32%,
+    #5a6c86 48%,
+    #eef6ff 52%,
+    #93a4bd 68%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #00052a) drop-shadow(0 3px 0 #00052a);
+}
+
+.mast__lead {
+  max-width: 58ch;
+  margin: 10px auto 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #e7e4ff;
+  text-shadow: 0 1px 0 #000;
+}
+
+/* Панель-консоль */
+
+.console {
+  margin-block: auto;
+  border: 3px solid;
+  border-color: var(--silver-hi) var(--silver-lo) var(--silver-lo) var(--silver-hi);
+  background: var(--panel);
+  box-shadow:
+    0 0 0 2px #0a0a2e,
+    0 14px 40px rgb(0 0 0 / 60%);
+}
+
+.console__bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 4px 8px;
+  border-bottom: 2px solid var(--silver-lo);
+  background: linear-gradient(180deg, var(--silver-hi), var(--silver) 50%, var(--silver-2));
+  color: #190052;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.console__blink {
+  color: #7a0000;
+}
+
+.console__blink[data-busy="true"] {
+  animation: blink 900ms steps(2, start) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.15;
+  }
+}
+
+.slots {
+  padding: 4px 10px;
+}
+
+/* Строки */
+
+.row {
+  display: grid;
+  grid-template-columns: 124px minmax(0, 1fr);
+  gap: 6px 12px;
+  padding: 11px 4px;
+  border-bottom: 1px dashed #4444a8;
+}
+
+.row:last-child {
+  border-bottom: 0;
+}
+
+.row__label {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  padding-top: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  text-shadow: 0 1px 0 #000;
+}
+
+.row__num {
+  color: #8f8fdf;
+}
+
+.row__value {
+  min-width: 0;
+  font-size: clamp(19px, 2.3vw, 27px);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  text-shadow: 1px 1px 0 #000;
+  overflow-wrap: anywhere;
+}
+
+.row__note {
+  grid-column: 2;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--violet);
+}
+
+.row.is-landed .row__value {
+  animation: glow 420ms steps(3, end);
+}
+
+@keyframes glow {
+  0% {
+    color: var(--yellow);
+  }
+  100% {
+    color: var(--white);
+  }
+}
+
+/* Палитра */
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.swatch {
+  width: 64px;
+  padding: 0;
+  border: 2px solid;
+  border-color: var(--silver-hi) var(--silver-lo) var(--silver-lo) var(--silver-hi);
+  background: var(--sw);
+  cursor: copy;
+}
+
+.swatch__chip {
+  display: block;
+  height: 46px;
+}
+
+.swatch__hex {
+  display: block;
+  padding: 2px 0 3px;
+  background: var(--silver);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.swatch:hover .swatch__chip,
+.swatch:focus-visible .swatch__chip {
+  filter: brightness(1.12);
+}
+
+/* Низ */
+
+.foot {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px 14px;
+  border-top: 2px solid var(--silver-lo);
+  background: linear-gradient(180deg, #141464, #00004a);
+}
+
+.foot__hint,
+.foot__count {
+  font-size: 11px;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+  color: var(--violet);
+}
+
+.foot__count {
+  text-align: right;
+}
+
+.spin {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  padding: 0 24px;
+  border: 3px solid;
+  border-color: var(--silver-hi) var(--silver-lo) var(--silver-lo) var(--silver-hi);
+  background: linear-gradient(180deg, var(--silver-hi), var(--silver) 55%, var(--silver-2));
+  color: #150048;
+  font-family: var(--verdana);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.spin:hover {
+  background: linear-gradient(180deg, #ffffff, #e4e4f6 55%, #c0c0dc);
+}
+
+.spin:active {
+  border-color: var(--silver-lo) var(--silver-hi) var(--silver-hi) var(--silver-lo);
+  padding-top: 2px;
+}
+
+.spin:disabled {
+  cursor: progress;
+  color: #5a5a7a;
+  border-color: var(--silver-lo) var(--silver-hi) var(--silver-hi) var(--silver-lo);
+}
+
+.spin__star {
+  color: #c00000;
+  font-size: 13px;
+}
+
+.spin--small {
+  height: 34px;
+  margin-top: 12px;
+  padding: 0 14px;
+  font-size: 11px;
+}
+
+/* Ошибка */
+
+.error {
+  margin: 10px;
+  padding: 12px 14px 16px;
+  border: 2px solid #ff5a5a;
+  background: #2a0020;
+}
+
+.error h2 {
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: var(--yellow);
+}
+
+.error p {
+  margin-bottom: 7px;
+  font-size: 11px;
+  color: #ffd9d9;
+}
+
+.error pre {
+  margin: 0 0 6px;
+  padding: 8px;
+  overflow-x: auto;
+  background: #140018;
+  border: 1px solid #6a2a6a;
+  font-size: 11px;
+  color: var(--white);
+}
+
+.error code {
+  font-family: var(--mono);
+}
+
+/* Тост */
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  transform: translate(-50%, 10px);
+  padding: 5px 12px;
+  border: 2px solid var(--yellow);
+  background: #0a0033;
+  color: var(--yellow);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 140ms ease, transform 140ms ease;
+  z-index: 10;
+}
+
+.toast[data-show="true"] {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.page__foot {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8484c0;
+}
+
+/* Адаптив */
+
+@media (max-width: 720px) {
+  .page {
+    width: 100%;
+    min-height: auto;
+    padding: 10px 0 18px;
+  }
+
+  .console {
+    margin-block: 0;
+  }
+
+  .mast {
+    padding: 4px 14px 12px;
+  }
+
+  .console {
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .slots {
+    padding: 2px 8px;
+  }
+
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+    padding: 10px 2px;
+  }
+
+  .row__label {
+    padding-top: 0;
+  }
+
+  .row__value {
+    font-size: 20px;
+  }
+
+  .row__note {
+    grid-column: 1;
+  }
+
+  .swatch {
+    width: 58px;
+  }
+
+  .swatch__chip {
+    height: 40px;
+  }
+
+  .foot {
+    position: sticky;
+    bottom: 0;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 10px 10px 8px;
+  }
+
+  .foot__hint {
+    order: 2;
+    text-align: center;
+  }
+
+  .foot__count {
+    order: 3;
+    text-align: center;
+  }
+
+  .spin {
+    order: 1;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .page__foot {
+    padding: 0 14px;
+    font-size: 11.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+
+  .marquee__track {
+    animation: none;
+  }
+}

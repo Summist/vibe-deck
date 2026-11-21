@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VIBEDECK — редактор данных</title>
+    <meta name="description" content="Редактор данных VIBEDECK: слоты, элементы, палитры." />
+    <meta name="color-scheme" content="light" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/editor.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <div class="bar__id">
+        <span class="bar__name">VIBEDECK</span>
+        <span class="bar__sep" aria-hidden="true">/</span>
+        <span class="bar__page">Редактор данных</span>
+      </div>
+
+      <div class="bar__right">
+        <p class="state" id="state" role="status" aria-live="polite" data-tone="idle">
+          <span class="state__dot" aria-hidden="true"></span>
+          <span id="state-text">Загрузка…</span>
+        </p>
+        <div class="bar__actions">
+          <button class="btn" id="validate" type="button">Проверить</button>
+          <button class="btn" id="download" type="button">Скачать JSON</button>
+          <button class="btn btn--primary" id="save" type="button">Сохранить в файл</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="work">
+      <aside class="rail">
+        <p class="rail__title">Слоты</p>
+        <nav class="slots" id="slots" aria-label="Слоты"></nav>
+
+        <div class="rail__foot">
+          <button class="btn btn--ghost" id="add-slot" type="button">Добавить слот</button>
+          <p class="rail__meta" id="rail-meta"></p>
+        </div>
+
+        <p class="rail__hint">
+          Правки меняют данные в памяти. Чтобы они попали в
+          <span class="mono">data/vibedeck.json</span>, нажмите «Сохранить в файл»
+          или <kbd>Ctrl</kbd> + <kbd>S</kbd>.
+        </p>
+      </aside>
+
+      <section class="pane" id="pane" aria-live="polite"></section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/editor.js" defer></script>
+  </body>
+</html>

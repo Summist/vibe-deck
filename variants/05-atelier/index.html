@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VIBEDECK — ателье</title>
+    <meta
+      name="description"
+      content="VIBEDECK: случайная комбинация ниши, настроения, имени бренда и палитры — отправная точка для нового концепта."
+    />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="../fonts/playfair-display.css" />
+    <link rel="stylesheet" href="../fonts/inter-tight.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="mast">
+        <h1 class="mast__title">Отправная точка</h1>
+
+        <p class="mast__lead">
+          Ниша, настроение, имя и палитра — комплект для нового концепта.
+          Один оборот, четыре независимых решения.
+        </p>
+
+        <p class="mast__meta">
+          <span>VIBEDECK</span>
+          <span>Сезон 01</span>
+        </p>
+
+        <p class="mast__count">
+          <span id="count">184 320</span>
+          <span class="mast__count-label">сочетаний</span>
+        </p>
+      </header>
+
+      <section class="stage" id="slots" aria-label="Комбинация" aria-busy="true"></section>
+
+      <div class="error" id="error" hidden>
+        <h2>Коллекция недоступна</h2>
+        <p>
+          Данные читаются из <span class="mono">data/vibedeck.json</span> запросом — нужен
+          локальный сервер. Из корня проекта:
+        </p>
+        <pre><code>python -m http.server 5173</code></pre>
+        <p>Затем откройте <span class="mono">http://localhost:5173/variants/05-atelier/</span>.</p>
+        <button class="spin spin--small" id="retry" type="button">Повторить</button>
+      </div>
+
+      <footer class="foot" id="foot" hidden>
+        <p class="foot__hint">Клик по образцу копирует HEX</p>
+        <p class="foot__note">Последняя комбинация хранится в браузере</p>
+
+        <button class="spin" id="spin" type="button">
+          <span id="spin-label">Крутить</span>
+          <span class="spin__line" aria-hidden="true"></span>
+        </button>
+      </footer>
+
+      <p class="visually-hidden" id="live" role="status" aria-live="polite"></p>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../core.js"></script>
+    <script src="page.js"></script>
+  </body>
+</html>

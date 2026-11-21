@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VIBEDECK — крути и придумывай</title>
+    <meta
+      name="description"
+      content="VIBEDECK: случайная комбинация ниши, настроения, имени бренда и палитры — отправная точка для нового концепта."
+    />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="../fonts/michroma.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>★ VIBEDECK ★ ГЕНЕРАТОР ИДЕЙ ★ 184 320 КОМБИНАЦИЙ ★ ЖМИ «КРУТИТЬ» ★</span>
+        <span>★ VIBEDECK ★ ГЕНЕРАТОР ИДЕЙ ★ 184 320 КОМБИНАЦИЙ ★ ЖМИ «КРУТИТЬ» ★</span>
+      </div>
+    </div>
+
+    <main class="page">
+      <p class="page__stamp">★ VIBEDECK · ВЕРСИЯ 1.0 ★</p>
+
+      <header class="mast">
+        <h1 class="mast__title">Крути и придумывай</h1>
+        <p class="mast__lead">
+          VIBEDECK собирает нишу, настроение, имя и палитру в одну случайную
+          комбинацию — отправную точку для нового проекта.
+        </p>
+      </header>
+
+      <section class="console" aria-label="Комбинация">
+        <div class="console__bar">
+          <span>КОМБИНАТОР</span>
+          <span class="console__blink" id="state">ГОТОВ</span>
+        </div>
+
+        <div class="slots" id="slots" aria-busy="true"></div>
+
+        <div class="error" id="error" hidden>
+          <h2>Ошибка загрузки данных</h2>
+          <p>
+            Страница читает <span class="mono">data/vibedeck.json</span> запросом — нужен
+            локальный сервер. Из корня проекта:
+          </p>
+          <pre><code>python -m http.server 5173</code></pre>
+          <p>Затем откройте <span class="mono">http://localhost:5173/variants/04-y2k/</span>.</p>
+          <button class="spin spin--small" id="retry" type="button">Повторить</button>
+        </div>
+
+        <footer class="foot" id="foot" hidden>
+          <p class="foot__hint">Щёлкни по цвету — HEX скопируется</p>
+
+          <button class="spin" id="spin" type="button">
+            <span class="spin__star" aria-hidden="true">★</span>
+            <span id="spin-label">Крутить</span>
+          </button>
+
+          <p class="foot__count" id="count">—</p>
+        </footer>
+      </section>
+
+      <p class="page__foot">
+        Сделано вручную · без фреймворков · последняя комбинация запоминается
+      </p>
+
+      <p class="visually-hidden" id="live" role="status" aria-live="polite"></p>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../core.js"></script>
+    <script src="page.js"></script>
+  </body>
+</html>

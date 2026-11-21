@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VIBEDECK — макет</title>
+    <meta
+      name="description"
+      content="VIBEDECK: случайная комбинация ниши, настроения, имени бренда и палитры — отправная точка для нового концепта."
+    />
+    <meta name="color-scheme" content="light" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="../fonts/inter-tight.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="sheet">
+      <div class="rule" aria-hidden="true"></div>
+
+      <header class="head">
+        <div class="head__brand">
+          <span class="head__mark" aria-hidden="true"></span>
+          <span>VIBEDECK</span>
+          <span class="head__sep" aria-hidden="true">/</span>
+          <span>инструмент</span>
+        </div>
+
+        <h1 class="head__title">Комбинация<br />для нового концепта</h1>
+      </header>
+
+      <section class="board" id="slots" aria-label="Комбинация" aria-busy="true"></section>
+
+      <div class="error" id="error" hidden>
+        <h2>Нет данных</h2>
+        <p>
+          Страница читает <span class="mono">data/vibedeck.json</span> запросом — нужен
+          локальный сервер. Из корня проекта:
+        </p>
+        <pre><code>python -m http.server 5173</code></pre>
+        <p>Затем откройте <span class="mono">http://localhost:5173/variants/02-swiss/</span>.</p>
+        <button class="spin spin--small" id="retry" type="button">Повторить</button>
+      </div>
+
+      <footer class="foot" id="foot" hidden>
+        <button class="spin" id="spin" type="button">
+          <span class="spin__text" id="spin-label">Крутить</span>
+        </button>
+      </footer>
+
+      <p class="visually-hidden" id="live" role="status" aria-live="polite"></p>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="../core.js"></script>
+    <script src="page.js"></script>
+  </body>
+</html>
