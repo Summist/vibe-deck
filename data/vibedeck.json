@@ -19,12 +19,8 @@
           "meta": "Еда и напитки"
         },
         {
-          "title": "Ремесленная пекарня",
+          "title": "Пекарня",
           "meta": "Еда и напитки"
-        },
-        {
-          "title": "Уличная марка",
-          "meta": "Мода"
         },
         {
           "title": "Магазин трикотажа",
@@ -53,30 +49,6 @@
         {
           "title": "Барбершоп",
           "meta": "Красота"
-        },
-        {
-          "title": "AI-сервис",
-          "meta": "Технологии"
-        },
-        {
-          "title": "Приложение для задач",
-          "meta": "Технологии"
-        },
-        {
-          "title": "Кибербезопасность",
-          "meta": "Технологии"
-        },
-        {
-          "title": "Умный дом",
-          "meta": "Технологии"
-        },
-        {
-          "title": "Медиа о культуре",
-          "meta": "Лайфстайл"
-        },
-        {
-          "title": "Клуб бега",
-          "meta": "Лайфстайл"
         },
         {
           "title": "Магазин растений",
@@ -147,10 +119,6 @@
           "meta": "Дом и интерьер"
         },
         {
-          "title": "Дизайн освещения",
-          "meta": "Дом и интерьер"
-        },
-        {
           "title": "Галерея",
           "meta": "Искусство и культура"
         },
@@ -165,6 +133,123 @@
         {
           "title": "Музей современного искусства",
           "meta": "Искусство и культура"
+        },
+        {
+          "title": "Модельное агенство"
+        },
+        {
+          "title": "Свадебное агенство"
+        },
+        {
+          "title": "Рюмочная"
+        },
+        {
+          "title": "Ресторан"
+        },
+        {
+          "title": "Музыкальная школа"
+        },
+        {
+          "title": "Парк развлечений"
+        },
+        {
+          "title": "Детские игрушки"
+        },
+        {
+          "title": "Посуда "
+        },
+        {
+          "title": "Светильники и люстры"
+        },
+        {
+          "title": "Женская консультация"
+        },
+        {
+          "title": "Клиника"
+        },
+        {
+          "title": "Зоомагазин"
+        },
+        {
+          "title": "Ветклиника"
+        },
+        {
+          "title": "Свечи"
+        },
+        {
+          "title": "Сладости"
+        },
+        {
+          "title": "Цыеточный"
+        },
+        {
+          "title": "Аромадифузоры"
+        },
+        {
+          "title": "Мед"
+        },
+        {
+          "title": "Спа центр"
+        },
+        {
+          "title": "Дезодоранты"
+        },
+        {
+          "title": "Настольные игры"
+        },
+        {
+          "title": "Школьные пренадлежности"
+        },
+        {
+          "title": "Корм для животных"
+        },
+        {
+          "title": "Груминг"
+        },
+        {
+          "title": "Орехи и сухофрукты"
+        },
+        {
+          "title": "Фотостудия"
+        },
+        {
+          "title": "Автомойка"
+        },
+        {
+          "title": "Квест-комнаты"
+        },
+        {
+          "title": "Оптика"
+        },
+        {
+          "title": "Театр"
+        },
+        {
+          "title": "Цирк"
+        },
+        {
+          "title": "Планетарий"
+        },
+        {
+          "title": "Бильярдный клуб"
+        },
+        {
+          "title": "Пазлы"
+        },
+        {
+          "title": "Нижнее белье"
+        },
+        {
+          "title": "Холодный чай"
+        },
+        {
+          "title": "Мыло ручной работы"
+        },
+        {
+          "title": "Массажный кабинет"
+        },
+        {
+          "title": "Школа английского"
         }
       ]
     },
@@ -208,6 +293,66 @@
         },
         {
           "title": "Таинственность"
+        },
+        {
+          "title": "Магия"
+        },
+        {
+          "title": "Тишина"
+        },
+        {
+          "title": "Мороз"
+        },
+        {
+          "title": "Детсво"
+        },
+        {
+          "title": "Сумерки"
+        },
+        {
+          "title": "Лучезарное"
+        },
+        {
+          "title": "Утонченность"
+        },
+        {
+          "title": "Деревенский"
+        },
+        {
+          "title": "Любопытство"
+        },
+        {
+          "title": "Роскошь"
+        },
+        {
+          "title": "Свежесть"
+        },
+        {
+          "title": "Экстравагантность"
+        },
+        {
+          "title": "Влюблённость в момент"
+        },
+        {
+          "title": "Лето без конца"
+        },
+        {
+          "title": "Искра вдохновения"
+        },
+        {
+          "title": "Лёгкое головокружение"
+        },
+        {
+          "title": "Маленькая роскошь"
+        },
+        {
+          "title": "Искренность"
+        },
+        {
+          "title": "Смелость"
+        },
+        {
+          "title": "Чудатсковатость"
         }
       ]
     },
@@ -287,6 +432,51 @@
         },
         {
           "title": "ТОН 9"
+        },
+        {
+          "title": "MELLOW"
+        },
+        {
+          "title": "AILO"
+        },
+        {
+          "title": "Avelora"
+        },
+        {
+          "title": "ELAN"
+        },
+        {
+          "title": "ALMA"
+        },
+        {
+          "title": "AUREA"
+        },
+        {
+          "title": "SOLACE"
+        },
+        {
+          "title": "SOLIS"
+        },
+        {
+          "title": "ÉLAN"
+        },
+        {
+          "title": "VELLUM"
+        },
+        {
+          "title": "BLUME"
+        },
+        {
+          "title": "BLISS"
+        },
+        {
+          "title": "Novum"
+        },
+        {
+          "title": "Fatum"
+        },
+        {
+          "title": "AETHER"
         }
       ]
     },
@@ -620,6 +810,393 @@
             {
               "hex": "#FFFDF8",
               "name": "Chalk"
+            }
+          ]
+        },
+        {
+          "title": "кобальт",
+          "colors": [
+            {
+              "hex": "#E9D9CA",
+              "name": "wj"
+            },
+            {
+              "hex": "#4D6080",
+              "name": "we"
+            },
+            {
+              "hex": "#F4721E",
+              "name": "ew"
+            }
+          ]
+        },
+        {
+          "title": "elkfw",
+          "colors": [
+            {
+              "hex": "#DDD4C4",
+              "name": "wlef"
+            },
+            {
+              "hex": "#5C88CD",
+              "name": "wkejf"
+            },
+            {
+              "hex": "#F1C436",
+              "name": "sd"
+            }
+          ]
+        },
+        {
+          "title": "sdvm",
+          "colors": [
+            {
+              "hex": "#85D1EA",
+              "name": "sdv"
+            },
+            {
+              "hex": "#A20B0B",
+              "name": "sdv"
+            }
+          ]
+        },
+        {
+          "title": "lda;",
+          "colors": [
+            {
+              "hex": "#C3F3CB",
+              "name": "ascl"
+            },
+            {
+              "hex": "#FDA0E9",
+              "name": "sdvas"
+            }
+          ]
+        },
+        {
+          "title": "wfv",
+          "colors": [
+            {
+              "hex": "#FFEEB3",
+              "name": "s"
+            },
+            {
+              "hex": "#B4D7CD",
+              "name": "fd"
+            },
+            {
+              "hex": "#8EA8C3",
+              "name": "cdc"
+            },
+            {
+              "hex": "#F47321",
+              "name": "dc"
+            }
+          ]
+        },
+        {
+          "title": "smd",
+          "colors": [
+            {
+              "hex": "#00F7FF",
+              "name": "sd"
+            },
+            {
+              "hex": "#B0FFFA",
+              "name": "dsw"
+            },
+            {
+              "hex": "#FF0087",
+              "name": "ew"
+            },
+            {
+              "hex": "#FF7DB0",
+              "name": "vs"
+            }
+          ]
+        },
+        {
+          "title": "skd",
+          "colors": [
+            {
+              "hex": "#8CE4FF",
+              "name": "s,dm"
+            },
+            {
+              "hex": "#FEEE91",
+              "name": "sdkn"
+            },
+            {
+              "hex": "#FFA239",
+              "name": "ssmnd"
+            },
+            {
+              "hex": "#FF5656",
+              "name": "ksd"
+            }
+          ]
+        },
+        {
+          "title": "kadn",
+          "colors": [
+            {
+              "hex": "#450693",
+              "name": "smnd"
+            },
+            {
+              "hex": "#8C00FF",
+              "name": "ksdn"
+            },
+            {
+              "hex": "#FF3F7F",
+              "name": "akndakns"
+            },
+            {
+              "hex": "#FFC400",
+              "name": "akns"
+            }
+          ]
+        },
+        {
+          "title": "dsmv",
+          "colors": [
+            {
+              "hex": "#45FFCA",
+              "name": "wsmnd"
+            },
+            {
+              "hex": "#FEFFAC",
+              "name": "s,dn"
+            },
+            {
+              "hex": "#FFB6D9",
+              "name": "dmn "
+            },
+            {
+              "hex": "#D67BFF",
+              "name": "ndsv "
+            }
+          ]
+        },
+        {
+          "title": "sdmn",
+          "colors": [
+            {
+              "hex": "#F6F1E9",
+              "name": "mvsd "
+            },
+            {
+              "hex": "#FFD93D",
+              "name": "dnv"
+            },
+            {
+              "hex": "#FF8400",
+              "name": "dv"
+            },
+            {
+              "hex": "#4F200D",
+              "name": "dsd"
+            }
+          ]
+        },
+        {
+          "title": "dfvdf ",
+          "colors": [
+            {
+              "hex": "#00FFD1",
+              "name": "tnmn"
+            },
+            {
+              "hex": "#31C6D4",
+              "name": "hyt"
+            },
+            {
+              "hex": "#FFFF00",
+              "name": "yhn"
+            },
+            {
+              "hex": "#FF1E1E",
+              "name": "yhn"
+            }
+          ]
+        },
+        {
+          "title": "df",
+          "colors": [
+            {
+              "hex": "#3B0000",
+              "name": "dfbd"
+            },
+            {
+              "hex": "#FF0000",
+              "name": "dfb"
+            },
+            {
+              "hex": "#FF95C5",
+              "name": "dfv"
+            },
+            {
+              "hex": "#FFF6CD",
+              "name": "dfd"
+            }
+          ]
+        },
+        {
+          "title": "efdb",
+          "colors": [
+            {
+              "hex": "#F6E2E9",
+              "name": "dfvddfv"
+            },
+            {
+              "hex": "#FEFAF3",
+              "name": "fdv"
+            },
+            {
+              "hex": "#B8CFB3",
+              "name": "dfv"
+            },
+            {
+              "hex": "#84A282",
+              "name": "dfv"
+            }
+          ]
+        },
+        {
+          "title": "dfvd",
+          "colors": [
+            {
+              "hex": "#E9DB53",
+              "name": "efva"
+            },
+            {
+              "hex": "#F3A03C",
+              "name": "vz"
+            },
+            {
+              "hex": "#F57922",
+              "name": "Vvvvvvvv"
+            },
+            {
+              "hex": "#ED1D1D",
+              "name": "fdv"
+            },
+            {
+              "hex": "#ED1D49",
+              "name": "dfv"
+            }
+          ]
+        },
+        {
+          "title": "ge",
+          "colors": [
+            {
+              "hex": "#7FB4FB",
+              "name": "dv"
+            },
+            {
+              "hex": "#FBDE96",
+              "name": "vd"
+            },
+            {
+              "hex": "#EBB930",
+              "name": "erg"
+            },
+            {
+              "hex": "#986B27",
+              "name": "eg"
+            },
+            {
+              "hex": "#4F3711",
+              "name": "eg"
+            }
+          ]
+        },
+        {
+          "title": "rgwr",
+          "colors": [
+            {
+              "hex": "#FFF4DE",
+              "name": "ever"
+            },
+            {
+              "hex": "#F29191",
+              "name": "ge"
+            },
+            {
+              "hex": "#8ECA3C",
+              "name": "erg"
+            },
+            {
+              "hex": "#1F150C",
+              "name": "ef"
+            },
+            {
+              "hex": "#412D15",
+              "name": "jb"
+            }
+          ]
+        },
+        {
+          "title": "nj",
+          "colors": [
+            {
+              "hex": "#41D2D2",
+              "name": "nbjb"
+            },
+            {
+              "hex": "#214264",
+              "name": "gv"
+            },
+            {
+              "hex": "#ED674B",
+              "name": ".,k"
+            },
+            {
+              "hex": "#283778",
+              "name": "n"
+            },
+            {
+              "hex": "#283778",
+              "name": ",m"
+            }
+          ]
+        },
+        {
+          "title": "n,,n",
+          "colors": [
+            {
+              "hex": "#4B3832",
+              "name": "g"
+            },
+            {
+              "hex": "#854442",
+              "name": "bn"
+            },
+            {
+              "hex": "#FFF4E6",
+              "name": "b"
+            },
+            {
+              "hex": "#3C2F2F",
+              "name": " n"
+            }
+          ]
+        },
+        {
+          "title": "fv",
+          "colors": [
+            {
+              "hex": "#4A1117",
+              "name": "cv "
+            },
+            {
+              "hex": "#DFDECA",
+              "name": "fv"
+            },
+            {
+              "hex": "#B55C5E",
+              "name": "fv"
             }
           ]
         }
